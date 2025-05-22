@@ -9,7 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class AutorService {
   
-  private _URL = environment.url;
+  private _URL = environment.urls.autores;
 
   constructor(private http: HttpClient) { }
 
