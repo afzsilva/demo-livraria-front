@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import Swal from 'sweetalert2';
+import { GeneroService} from './genero.service'; // Ajuste o caminho conforme necessário
 import { Genero } from '../../model/genero';
-import { GeneroService } from './genero.service';
 
 @Component({
   selector: 'app-generos',
