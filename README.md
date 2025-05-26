@@ -1,59 +1,76 @@
-# DemoLivrariaFront
+# 📚 Demo Livraria – Ambiente Dockerizado
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este projeto contém os serviços de uma aplicação completa para gerenciamento de uma livraria, com backend em Spring Boot, frontend em Angular e banco de dados MySQL, todos orquestrados via Docker Compose.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🧱 Estrutura dos serviços
+
+- **Backend**: Spring Boot (porta `8080`)
+- **Frontend**: Angular (porta `3000`)
+- **Banco de dados**: MySQL 8 (porta `3306`)
+
+---
+
+## 🚀 Como executar o projeto
+
+### 1. Pré-requisitos
+
+- Docker instalado ([Guia oficial](https://docs.docker.com/get-docker/))
+- Docker Compose instalado
+
+### 2. Executar os containers
+
+Na raiz do projeto, execute:
+
+```bash
+docker-compose up -d
+```
+Isso fará o download das imagens (caso não estejam localmente) e iniciará os três serviços: backend, frontend e banco de dados.
+
+------
+
+## 🌐 Acessos
+
+| Serviço  | URL de acesso                                     |
+| -------- | ------------------------------------------------- |
+| Frontend | [http://localhost:3000](http://localhost:3000/)   |
+| Backend  | [http://localhost:8080](http://localhost:8080/)   |
+| MySQL    | `localhost:3306` (usuário: `root`, senha: `root`) |
+
+---
+
+
+
+# DemoLivrariaFront (Modo Dev)
+
+Este projeto foi gerado utilizando o [Angular CLI](https://github.com/angular/angular-cli) na versão 19.0.2.
+
+---
+
+
+
+## Dependencias
+
+Uma vez clonado o projeto, instale as dependências com o seguinte comando
+
+```
+npm install
+```
+
+------
+
+
+
+## Servidor de desenvolvimento
+
+Para iniciar um servidor local de desenvolvimento, execute:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Após o servidor estar em execução, abra o navegador e acesse `http://localhost:4200/`. A aplicação será recarregada automaticamente sempre que você modificar qualquer um dos arquivos-fonte.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
