@@ -7,7 +7,7 @@ Este projeto contém os serviços de uma aplicação completa para gerenciamento
 ## 🧱 Estrutura dos serviços
 
 - **Backend**: Spring Boot (porta `8080`)
-- **Frontend**: Angular (porta `3000`)
+- **Frontend**: Angular (porta `4200`)
 - **Banco de dados**: MySQL 8 (porta `3306`)
 
 ---
